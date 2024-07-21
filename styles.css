@@ -1,0 +1,54 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: Arial, sans-serif;
+}
+
+.chat-container {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.header {
+	flex: 0 1 auto; /* Элемент может расти и уменьшаться под контент */
+	min-height: 50px; /* Минимальная высота */
+	background-color: #ccc;
+	padding: 10px;
+	text-align: left;
+}
+
+.body-container {
+	display: flex;
+	flex: 1; /* Заполняет все оставшееся пространство */
+	overflow: hidden;
+}
+
+.left-panel {
+	flex: 0 0 200px; /* Фиксированная ширина 200px */
+	background-color: #f4f4f4;
+	overflow-y: auto;
+	padding: 10px;
+	border-right: 1px solid #ddd;
+}
+
+.right-panel {
+	flex: 1; /* Заполняет все оставшееся пространство */
+	background-color: #fff;
+	overflow-y: auto;
+	padding: 10px;
+}
+
+.footer {
+	flex: 0 1 auto; /* Элемент может расти и уменьшаться под контент */
+	min-height: 100px; /* Минимальная высота */
+	background-color: #ccc;
+	padding: 10px;
+	text-align: left;
+}
